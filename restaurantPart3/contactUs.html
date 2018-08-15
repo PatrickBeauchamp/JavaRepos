@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact Us</title>
+		<link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<style>
+			form {
+			line-height: 3em;
+			
+			}
+			
+			.label {
+				display: inline-block;
+				float: left;
+				clear: left;
+				width: 40%;
+				text-align: right;
+				font-size: 20px;
+				padding-right: 10px;
+				}
+			input[type=text], select, textarea, .otherInput{
+				display: inline-block;
+				vertical-align: middle;
+				float: left;				
+				}
+			
+		</style>
+	</head>
+	
+	<body>
+		<div class="title">
+			<h1>Soylent Cafe &#38; Bistro</h1>
+		</div>
+		<hr />
+		<ul class="nav nav-pills">
+			<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="contactUs.html">Contact Us</a></li>
+		</ul>
+		<hr />		
+		<div style="background-color: wheat">
+			
+			<form class="form-horizontal" action="submit.html" method="POST">
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="name">Name:</label>
+					<div class="col-sm-6">
+						<input type="text" class="form-control" id="name" name="name" required>
+							<div class="col-sm-2">
+							</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="email">email:</label>
+					<div class="col-sm-6">
+						<input type="email" class="form-control" id="email" name="email" required>
+							<div class="col-sm-2">
+							</div>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="phone">Phone:</label>
+					<div class="col-sm-6">
+						<input type="tel" class="form-control" id="phone" name="phone" required>
+							<div class="col-sm-2">
+							</div>
+					</div>
+				</div>
+				
+				<div class="form-group">
+				
+					<label class="control-label col-sm-4" for="reason">Reason for Inquiry:</label>
+					<div class="col-sm-6">
+						<select class="form-control" id="reason" name="reason" required>
+							<option value="catering" selected>Catering</option>
+							<option value="privateParty">Private Party</option>
+							<option value="feedback">Feedback</option>
+							<option value="other">Other</option>
+						</select>
+							<div class="col-sm-2">
+							</div>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="info">Additional Information:</label>
+					<div class="col-sm-6">
+						<textarea class="form-control"></textarea>
+							<div  class="col-sm-2">
+							</div>
+					</div>
+				</div>
+				
+				<div class="form-group">				
+								
+						<label class="control-label col-sm-4">Have you been to the restaurant before?</label>
+						<div class="col-sm-6">
+							<input type="radio" id="choice1" name="visited" value="no">
+							<label for="choice1">No</label>
+								
+							<input type="radio" id="choice2" name="visited" value="yes">
+							<label for="choice2">Yes</label>
+						</div>
+							<div class="col-sm-2">
+							</div>
+				</div>
+				
+									
+				<div class="form-group">
+					<label class="control-label col-sm-4">Best time to contact you:</label>
+					<div class="col-sm-6">
+						<input type="checkbox" id="monday" name="contactDays" value="monday">
+						<label for="monday">M</label>
+						
+						<input type="checkbox" id="tuesday" name="contactDays" value="tuesday">
+						<label for="tuesday">T</label>
+						
+						<input type="checkbox" id="wednesday" name="contactDays" value="wednesday">
+						<label for="wednesday">W</label>
+						
+						<input type="checkbox" id="thursday" name="contactDays" value="thursday">
+						<label for="thursday">Th</label>
+						
+						<input type="checkbox" id="friday" name="contactDays" value="friday">
+						<label  for="friday">F</label>
+					</div>
+						<div class="col-sm-2">
+						</div>
+				</div>
+				
+				<div class="form-group">
+					<div class="col-sm-offset-4 col-sm-6">
+						<button type="submit" class="btn btn-default">Send Request</button>
+					</div>
+					<div class="col-sm-2">
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="footer">
+			<hr />
+			<footer>
+				<pre>1600&#190; Clifton Road NE        Atlanta, GA        30329</pre>
+				<p>(999) 765-4321</p>
+			</footer>
+		</div>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</body>
+</html>
